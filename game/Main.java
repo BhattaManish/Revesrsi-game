@@ -1,3 +1,6 @@
+/*
+ *@author mbk
+ */
 package game;
 
 import game.Simulation;
