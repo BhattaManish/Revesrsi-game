@@ -1,7 +1,7 @@
 package game;
 
-import de.uni_hannover.hci.manish_bhatta_kapadi.simulation.Simulation;
-import de.uni_hannover.hci.manish_bhatta_kapadi.game_attribute.*;
+import game.Simulation;
+import game.game_attribute.*;
 
 import java.util.Scanner; 
 
@@ -28,7 +28,9 @@ public class Main{
 			player = (player == ReversiElement.X) ? ReversiElement.O : ReversiElement.X;
 			game.updateCount();
 		}while(!simulate.isPlaceAvilable(game,player));
-
+		// game ends
+		game.printBox();
+		game.updateCount();
 		if(game.scoreX() > game.scoreO()){
 			System.out.println("Winner is Player X !");
 		}else if(game.scoreX() < game.scoreO()){
