@@ -1,4 +1,4 @@
 # Revesrsi-game
 Reversi Game
 
-This Game doesnot contain any GUI from java
+This Game doesnot contain any GUI.
